@@ -2,13 +2,6 @@
 * {
     background-color: hsl(0, 0%, 0%);
     color: #fff;
-    padding: auto;
-    width: auto;
-    height: auto;
-}
-
-.clock {
-    padding: auto;
 }
 
 .timer {
@@ -31,7 +24,6 @@
     width: auto;
     height: auto;
     background-color: hsl(0, 1%, 19%);
-    padding: 200px;
     position: relative;
     border-radius: 10px;
 }

@@ -2,26 +2,25 @@ import React, {useState, useEffect} from 'react';
 
 function DigitalClock() {
     // Initializes the timer with the useState hook
-    const [time, setTime] = useState(new Date());
     const [formattedTime, setFormattedTime] = useState("");
 
     // useEffect hook that will allow the clock to update every second taking the current time.
 
    useEffect(() => {
-    const time = setInterval(() => {
-        const time = new Date();
-        setTime(time);
+    const interval = setInterval(() => {
+    const now = new Date();
         setFormattedTime(
-        time.toLocaleTimeString([],{
+        now.toLocaleTimeString({
             hours: '2-digit',
             minutes: '2-digit',
-            seconds: '2-digit'
+            seconds: '2-digit',
+            hour12: true,
         })
     );
 }, 1000);
 
     // Clears up the interval to prevent memory leaks.
-    return clearInterval => (time);
+    return () => clearInterval(interval);
 
 }, []);
 
