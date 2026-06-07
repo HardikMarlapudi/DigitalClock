@@ -10,12 +10,12 @@ function DigitalClock() {
     const interval = setInterval(() => {
     const now = new Date();
         setFormattedTime(
-        now.toLocaleTimeString({
-            hours: '2-digit',
-            minutes: '2-digit',
-            seconds: '2-digit',
-            hour12: true,
-        })
+            now.toLocaleTimeString([], {
+                hours: '2-digit',
+                minutes:'2-digit',
+                seconds:'2-digit',
+                hours12: true,
+            })
     );
 }, 1000);
 
