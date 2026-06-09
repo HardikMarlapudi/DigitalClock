@@ -1,2 +1,2 @@
 # DigitalClock
-<img width="3022" height="1818" alt="image" src="https://github.com/user-attachments/assets/bb7d8501-b9f4-4733-87b8-3b570787c1e8" />
+<img width="3024" height="1654" alt="image" src="https://github.com/user-attachments/assets/b9e76fa8-fa0b-4873-8260-79d970ed74ac" />
