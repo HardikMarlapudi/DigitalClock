@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
-function DigitalClock() {
-    // Initializes the timer with the useState hook
+const DigitalClock = () => {
+
+    // Initializes the timer with the useState hook.
+
     const [formattedTime, setFormattedTime] = useState("");
 
     // useEffect hook that will allow the clock to update every second taking the current time.
@@ -20,14 +22,15 @@ function DigitalClock() {
 }, 1000);
 
     // Clears up the interval to prevent memory leaks.
+
     return () => clearInterval(interval);
 
 }, []);
 
     return (
-        <div className="clock">
-            <div className="container">
-                <h1 className="timer">{formattedTime}</h1>
+        <div className="bg-black px-20 py-60">
+            <div className="flex justify-center align-center text-center bg-gray-900 relative border-4">
+                <div className="flex justify-center align-center w-auto text-7xl font-sans font-bold px-10 py-35 text-green-500">{formattedTime}</div>
             </div>
         </div>
     )
