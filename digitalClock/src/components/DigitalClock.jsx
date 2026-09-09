@@ -28,9 +28,9 @@ const DigitalClock = () => {
 }, []);
 
     return (
-        <div className="bg-black rounded-4xl px-20 py-60">
-            <div className="flex justify-center align-center text-center bg-gray-900 rounded-4xl relative border-4">
-                <div className="flex justify-center align-center w-auto text-7xl font-sans rounded-4xl font-bold px-10 py-35 text-green-500">{formattedTime}</div>
+        <div className="flex justify-center align-center items-center bg-black px-15 py-50">
+            <div className="flex justify-center align-center text-center bg-gray-900 rounded-4xl px-10 relative border-4">
+                <div className="flex justify-center align-center w-auto text-7xl font-sans px-20 py-60 rounded-4xl font-bold text-green-500">{formattedTime}</div>
             </div>
         </div>
     )
